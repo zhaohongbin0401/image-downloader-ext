@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "图片下载助手",
+  "version": "1.0.0",
+  "description": "一键抓取当前网页全部图片，支持预览、多选与批量下载。",
+  "default_locale": "zh_CN",
+  "action": {
+    "default_title": "图片下载助手",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
