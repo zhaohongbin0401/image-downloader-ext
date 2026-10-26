@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>图片下载助手 · 浏览器扩展</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:#fafaf7;color:#1f2937;line-height:1.7;}
+  .wrap{max-width:780px;margin:0 auto;padding:48px 24px 64px;}
+  header{text-align:center;margin-bottom:40px;}
+  header h1{font-size:32px;color:#0f766e;font-weight:700;letter-spacing:-1px;}
+  header p{color:#6b7280;margin-top:10px;font-size:15px;}
+  .badge{display:inline-block;margin-top:16px;padding:5px 12px;background:#fdf3e3;color:#b45309;border-radius:999px;font-size:12px;}
+  section{background:#fff;border:1px solid #e7e2da;border-radius:14px;padding:24px 28px;margin-bottom:20px;}
+  section h2{font-size:17px;color:#0f766e;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+  section h2::before{content:'';display:inline-block;width:4px;height:18px;background:#0f766e;border-radius:2px;}
+  .feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}
+  .feat div{background:#f9fafb;padding:12px 14px;border-radius:10px;border:1px solid #eee;font-size:13.5px;}
+  .feat div strong{display:block;color:#0f766e;margin-bottom:4px;font-size:14px;}
+  ol{padding-left:20px;}
+  ol li{margin-bottom:8px;font-size:14px;}
+  code{background:#f3f4f6;padding:2px 7px;border-radius:5px;font-size:12.5px;color:#1f2937;font-family:Consolas,monospace;}
+  a{color:#0f766e;text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .btn{display:inline-block;background:#0f766e;color:#fff;padding:10px 22px;border-radius:8px;font-weight:600;font-size:14px;margin-top:4px;}
+  .btn:hover{background:#0d5d56;text-decoration:none;}
+  footer{text-align:center;margin-top:32px;color:#9ca3af;font-size:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>图片下载助手</h1>
+    <p>一键抓取当前网页全部图片 · 浏览器扩展（Edge / Chrome 通用）</p>
+    <span class="badge">Manifest V3 · 免费 · 开源</span>
+  </header>
+
+  <section>
+    <h2>功能特性</h2>
+    <div class="feat">
+      <div><strong>自动扫描</strong>识别 img / source / 背景图 / 懒加载属性</div>
+      <div><strong>实时预览</strong>弹窗内缩略图网格，点击勾选</div>
+      <div><strong>批量下载</strong>一键将选中图片保存到本地</div>
+      <div><strong>极速响应</strong>不依赖云端，纯本地运行</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>安装方法（开发者模式）</h2>
+    <ol>
+      <li>从仓库下载 <code>image-downloader-ext</code> 文件夹（或克隆后取该目录）</li>
+      <li>浏览器地址栏输入 <code>edge://extensions</code>（Chrome 则是 <code>chrome://extensions</code>）</li>
+      <li>右上角打开 <strong>开发者模式</strong></li>
+      <li>点击 <strong>加载解压缩的扩展</strong>，选择 <code>image-downloader-ext</code> 文件夹</li>
+      <li>固定扩展图标到工具栏，访问任意网页后点击即可使用</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>源码</h2>
+    <p>GitHub 仓库：<a href="https://github.com/zhaohongbin0401/image-downloader-ext">github.com/zhaohongbin0401/image-downloader-ext</a></p>
+    <p style="margin-top:12px;"><a class="btn" href="https://github.com/zhaohongbin0401/image-downloader-ext/archive/refs/heads/main.zip">下载扩展 ZIP</a></p>
+  </section>
+
+  <footer>赵鸿斌 · 物联网243班 · 2026</footer>
+</div>
+</body>
+</html>
